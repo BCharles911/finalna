@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/oneVideo.css" type="text/css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="oneVideo.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+		<!--  bootstrap select -->
+		<link rel="stylesheet" href="bootstrap-select.css">
+		<script src="bootstrap-select.js"></script>
+		<link rel="icon" href="images\nebIcon.png">
+		<title>Video</title>
+		<!--  Moment.js -->
+		<script src = "moment.js"></script>
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+<nav id="navnav" class="navbar navbar-default">
+			<div id="divNav" class="container-fluid">
+				<div class="col-md-1">
+					<a href="index.html"><img id="logoimg" src="images/nebulaWrite.png"/></a>
+				</div>
+				<div class="col-md-5">
+	
+				  
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<ul class="nav navbar-nav navbar-right" id="korisnikBar">
+				    </ul>
+				</div>
+			</div>
+	</nav>
+
+		<div id="divSelect" class="container-fluid" >
+			<div id="divSelector" class="row" id="glavniRed">
+				<select class="selectpicker commentOptions" id="select" data-width="fit">
+					<option>Edit</option>
+					<option>Delete</option>
+				</select>
+					<div class="col-md-3">
+						
+					</div>
+				
+
+
+
+
+
+				<div class="col-md-6">
+
+					<div id="videoURLplaceholder" class="row" >
+				
+					</div>
+					
+
+
+					<div class="row" id="divSor">
+						<div class="col-md-9" id="divSor2">
+							<h2 id="videoName"></h2>
+							<p id="created"></p>
+							<p id="views"></p>
+						</div>
+						<div id="divLikes" class="col-md-3" >
+							<div class="row" id="divLajkovi">
+								<div class="col-md-3"></div>
+								<div class="col-md-4">
+									<img id="likeButton" src="#"><p id="numberOfLikes"></p>
+								</div>
+								<div class="col-md-4">
+									<img id="dislikeButton" src="#" ><p id="numberOfDislikes"></p>
+								</div>
+								<div class="col-md-1"></div>
+							</div>
+							
+							
+
+						</div>
+					</div>
+					
+					<div class="row" id="divUploader">
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<h4 id="h4tagUploader">Uploader</h4>
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-5"></div>
+							<div id="uploaderImageContainer" class="col-md-2">
+							</div>
+							<div class="col-md-5"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-4" id="uploaderImDiv2">
+								<button id="followUploaderButton" class="btn btn-default"></button>
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+					</div>
+
+					
+
+					<div class="row" id="divVideoDesc">
+						<div class="row">
+							<h4 id="hVDesc">Video description</h4>
+						</div>
+						<!-- border-style: none none solid none;border-width:thin;border-color:#e3e2e2; -->
+						<div class="row">
+							<div class="row" id="divDescChange">
+								<div class="col-md-11"></div>
+								<div class="col-md-1">
+									<span id="changeDescriptionButton" class="glyphicon glyphicon-pencil"></span>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+							<div class="col-md-8" id="descriptionSection">
+								
+							</div>
+							<div class="col-md-2">
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="row" id="divCommentSection" >
+						<div class="col-md-12">
+							<h3 id="h3Comment">Comment section</h3>
+							
+							<div class="row" id="divPost">
+
+								
+								
+							
+
+								<div class="col-md-10">
+									
+									<div class="row" id="divPostUnder">
+										<div class="col-md-7"  id="divPostUnder2">
+											<input id="commentInput" type="text" class="form-control" placeholder="say something about this video"/>
+											
+										</div>
+										<div class="col-md-3">
+											<button id="commentSubmit" type="submit" class="btn btn-default">Post</button>
+										</div>
+										<div class="col-md-2">
+											
+										</div>
+									</div>
+									
+									
+									
+									
+									
+								</div>
+
+								<div class="col-md-2" id="divSort">
+									<!--  <button id="showFilters" type="submit" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-sort-by-attributes"></span> </button>-->
+									
+						<!-- 				<form class="form-group" id="sortComments">
+											<select id="eksperimentPicker" class="selectpicker" title="<span class='glyphicon glyphicon-sort-by-attributes'></span>" data-width="fit">
+												<option value="ratingAsc" data-content="Rating <span class='glyphicon glyphicon-chevron-up'></span>"></option>
+												<option value="postedAsc" data-content="Posted <span class='glyphicon glyphicon-chevron-up'></span>"></option>
+												<option value="ratingDesc" data-content="Rating <span class='glyphicon glyphicon-chevron-down'></span>"></option>	
+												<option value="postedDesc" data-content="Posted <span class='glyphicon glyphicon-chevron-down'></span>"></option>
+											</select>
+										</form> -->
+									
+									
+								</div>
+							</div>
+								
+								
+								<div class="row">
+									<div class="col-md-12" id="commentSection"></div>
+								</div>
+							
+
+
+						</div>
+					</div>
+					
+					
+
+					<div class="row" id="videoOptions">
+					
+						<div class="row">
+						
+							<h3 id="videoOptionsH">Video options</h3>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4" id="divVisibility">
+								<p>Select video visibility</p>
+							</div>
+							<div class="col-md-4" id="divRating">
+								<p>Select rating visibility</p>
+							</div>
+							<div class="col-md-4" id="divCommentsR">
+								<p>Comments </p>
+							</div>
+							
+						</div>
+						<div class="row" id="divOptions">
+							<div class="col-md-4">
+								<select id="selectVisibility" name="selectVisibility" class="selectpicker" data-width="fit">
+									<option value="public">Public</option>
+									<option id="optionUnlisted" value="unlisted">Unlisted</option>
+									<option value="private">Private</option>
+								</select>
+							</div>
+							<div class="col-md-4" id="divSwitch">
+								<select id="selectRatingVisibility" class="selectpicker" name="selectRatingVisibility" data-width="fit">
+									<option value="visible">Visible</option>
+									<option value="hidden">Hidden</option>
+								</select> 
+							</div>
+							<div class="col-md-4" id="divEnDis">
+								<select id="selectCommentsVisibility" name="selectCommentsVisibility" class="selectpicker" data-width="fit">
+									<option value="enable">Enable</option>
+									<option value="disable">Disable</option>
+								</select> 
+							</div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<button id="blockVideo" type="submit" class="btn btn-default btn-lg">Block</button>
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-3"></div>
+							<div class="col-md-6" style="text-align:center;">
+								
+								<button id="deleteVideoButton" type="submit" class="btn btn-default btn-lg">Delete this video</button>
+							</div>
+							<div class="col-md-3"></div>
+						</div>
+						
+						</div>
+					
+					
+				
+				
+				
+				
+				<div class="row" id="between">
+						
+				</div>
+				</div>
+
+
+
+
+				<div class="col-md-3">
+				<!-- style="background: linear-gradient(to bottom, #222, white);height: 32em;" -->
+					
+				</div>
+
+
+				
+			
+			</div>
+		
+			<div id="messageDiv">
+					<h4 id="messageNotification"></h4>
+			</div>
+			<div id="deleteConfirmation">
+				<div class="row"><h3  id="h3DeleteVideo">Delete this video?</h3></div>
+				<div class="row" style="margin-top:3em;">
+					<div class="col-md-1"></div>
+					<div class="col-md-5">
+						<button id="okDeleteVideo"  type="submit" class="btn btn-default">Delete</button>
+					</div>
+					<div class="col-md-5">
+						<button id="cancelDeleteVideo"  type="submit" class="btn btn-default">Cancel</button>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				
+			</div>
+
+		</div>
+		
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Nebula<span>Tube</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+				
+				
+				</p>
+
+				
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Arse Teodorovica 1</span>Novi Sad, Srbija</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+38161 285 6602</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:djapic97@outlook.com">djapic97@outlook.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+							<p class="footer-company-about">
+					<span>O projektu</span>
+					Ovo je projekat iz web programiranja. 
+					Radjen je u java programskom jeziku.
+					Java script jeziku, html, css... 
+				</p>
+
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>NebTube</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>InitServlet</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>nebula.InitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+    <listener>
+    <listener-class>nebula.InitListener</listener-class>
+  </listener>
+  
+
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>nebula.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>RegisterServlet</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>nebula.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>LogMeOutServlet</display-name>
+    <servlet-name>LogMeOutServlet</servlet-name>
+    <servlet-class>nebula.LogMeOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogMeOutServlet</servlet-name>
+    <url-pattern>/LogMeOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+  
+    <description></description>
+    <display-name>OneVideoServlet</display-name>
+    <servlet-name>OneVideoServlet</servlet-name>
+    <servlet-class>nebula.OneVideoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OneVideoServlet</servlet-name>
+    <url-pattern>/OneVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  
+    <description></description>
+    <display-name>SingleUserServlet</display-name>
+    <servlet-name>SingleUserServlet</servlet-name>
+    <servlet-class>nebula.SingleUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SingleUserServlet</servlet-name>
+    <url-pattern>/SingleUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+   <servlet>
+    <description></description>
+    <display-name>LikeDislikeRemoveServlet</display-name>
+    <servlet-name>LikeDislikeRemoveServlet</servlet-name>
+    <servlet-class>nebula.LikeDislikeRemoveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeDislikeRemoveServlet</servlet-name>
+    <url-pattern>/LikeDislikeRemoveServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+     <servlet>
+    <description></description>
+    <display-name>LikeDislikeServlet</display-name>
+    <servlet-name>LikeDislikeServlet</servlet-name>
+    <servlet-class>nebula.LikeDislikeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LikeDislikeServlet</servlet-name>
+    <url-pattern>/LikeDislikeServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+   <servlet>
+    <description></description>
+    <display-name>CommentServlet</display-name>
+    <servlet-name>CommentServlet</servlet-name>
+    <servlet-class>nebula.CommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CommentServlet</servlet-name>
+    <url-pattern>/CommentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+   <servlet>
+    <description></description>
+    <display-name>UploadCommentServlet</display-name>
+    <servlet-name>UploadCommentServlet</servlet-name>
+    <servlet-class>nebula.UploadCommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadCommentServlet</servlet-name>
+    <url-pattern>/UploadCommentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    
+   <servlet>
+    <description></description>
+    <display-name>FollowServlet</display-name>
+    <servlet-name>FollowServlet</servlet-name>
+    <servlet-class>nebula.FollowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FollowServlet</servlet-name>
+    <url-pattern>/FollowServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+     <servlet>
+    <description></description>
+    <display-name>UploadPictureServlet</display-name>
+    <servlet-name>UploadPictureServlet</servlet-name>
+    <servlet-class>nebula.UploadPictureServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadPictureServlet</servlet-name>
+    <url-pattern>/UploadPictureServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+   
+     <servlet>
+    <description></description>
+    <display-name>UploadVideoServlet</display-name>
+    <servlet-name>UploadVideoServlet</servlet-name>
+    <servlet-class>nebula.UploadVideoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadVideoServlet</servlet-name>
+    <url-pattern>/UploadVideoServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css">
+	<script src="jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<title>Upload Video</title>
+	<link rel="icon" href="images\nebIcon.png">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="uploadVideo.js"></script>
+	<link href="css/uploadVideo.css" rel="stylesheet" type="text/css">
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Latest bootstrap select -->
+	<link rel="stylesheet" href="bootstrap-select.css">
+	<script src="bootstrap-select.js"></script>
+	
+
+
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+<!--     <h2 class="active"> Sign In </h2>
+    <h2 class="underlineHover"> <a href="register.html">Sign Up</a></h2> -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="images\upload.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form id="videoData" method="post" enctype="multipart/form-data" action="UploadVideoServlet">
+      	<input name="ownerUsername" class="fadeIn second" id="ownerUsername" hidden="true"></input>
+      	<input id="videoName" name="name" class="form-control" type="text" placeholder="Type videos name"> 
+      	<input name="videoURL" id="videoURL" class="form-control" type="text" placeholder="Type videos name"> 
+      	<label class="btn btn-default"><input id="videoImage" type="file" placeholder="Type videos name" name="videoImage" hidden>Browse ... </label>
+		<img  src="images/initial.png" id="generatedVideoImage"/>
+		<label id="buttonLabel" class="btn btn-default btn-lg"><input id="uploadButton" type="submit" name="uploadButton" hidden>Upload</label> 
+			
+     
+   <div class="row" id="divVideoVis">
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<h4>Video visibility</h4>
+				</div>
+				<div class="col-md-3">
+					 <select name="selectVisibility" class="selectpicker" id="picker" data-width="fit">
+						<option id="publicVisibilityChoice" value="public">Public</option>
+						<option id="unlistedVisibilityChoice" value="unlisted">Unlisted</option>
+						<option id="privateVisibilityChoice" value="private">Private</option>
+					</select> 
+				</div>
+				<div class="col-md-3">
+					
+				</div>
+			
+			</div>
+    
+        <div id="formFooter">
+      <a class="underlineHover" href="index.html">Home</a>
+      
+    </div>
+    </form>
+
+
+
+
+    
+    
+    	<div class="col-md-3" >
+					<p id="videoNameMessage" style="color:red;">Video name already exists</p>
+				</div>
+    
+
+  </div>
+
+
+
+    <!-- Remind Passowrd -->
+
+    
+ 
+</div>
+	
+
+</body>
+</html>

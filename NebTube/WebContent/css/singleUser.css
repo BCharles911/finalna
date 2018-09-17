@@ -1,0 +1,658 @@
+html {
+			height: 100%;
+			
+		}
+		
+		body{
+			font-family: 'Poiret One', cursive;
+			font-weight: 900;
+			letter-spacing:2px;
+			background: url('../images/darkwebsite.jpg') center center;
+			color: white;
+		}
+		img {
+			width:100px;	
+			height:  auto;
+		}
+		p {
+			margin:0;
+			padding:0;
+		}
+		
+		#formControl{
+				margin-top: 10px;
+				
+			}
+		
+
+		#messageDiv{
+			position: fixed;
+			bottom:5em;
+			left:5em;
+			height:10em;
+			width:20em;
+			background-color: #292c2f;
+			opacity: 0.9;
+			color:black;
+			border-style: solid;
+			border-width:0.1px;
+			border-color: #292c2f;
+			box-shadow: 5px 5px 30px 0.5px rgba(0,0,0,0.3);
+			word-wrap: break-word;
+			border-radius: 20px;
+
+		}
+		#navnav{
+			border: 0 !important;
+		}
+		#messageNotification{
+				background-color: transparent;
+			text-align:center;
+			padding-top:2.5em;
+			color:white;
+			font-family: 'Poiret One', cursive;
+			
+		}
+		
+	ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    height:100%;
+				}
+			
+			li a {
+    			color: white;
+			}
+			
+			li a:hover {
+			    background-color: #555;
+			    color: red;
+			}
+			
+			
+			#navA{
+				font-family: 'Poiret One', cursive;
+				color: white;
+			}
+			
+			#navB{
+				font-family: 'Poiret One', cursive;
+				color: white;
+			}
+			
+			#navC{
+				color:white;
+				font-family: 'Poiret One', cursive;
+				text-align:center;
+			}
+			#navD{
+				font-family: 'Poiret One', cursive;
+				color:white;
+			}
+			
+			#divNav{
+				background-color: #292c2f;
+				border: none !important;
+			}
+			
+			
+			#divUsers{
+				border-right-style:none;
+				text-align:center;
+				background-color: transparent;
+				margin:1em;
+				padding:0;
+				color: white;
+			}
+			
+			h2.nav {
+				margin-top:0;
+				
+			}
+			
+			
+			#logoimg{
+			
+			    height: auto; 
+    			width: auto; 
+    			float: left;
+    			max-height: 70px;
+			}
+			
+		
+		#VidsName {
+			font-size: 1em;
+			font-weight: normal; 
+			margin-top: 0.1em;
+			margin-bottom: 0;
+		}
+		#VidsTime{
+			display:inline;
+			font-size: 9px;
+			font-weight: lighter;
+		}
+		#VidsGroup {
+			display: inline;
+			font-size: 9px;
+			font-weight: lighter;
+		}
+		#VidsPicture {
+			width: 100%;
+			height: auto;
+		}
+		#korisnikBar{
+		}
+		#siteName {
+			margin: 0;
+		
+		}
+		
+		#profilePicture:hover{
+			opacity:0.5;
+			cursor:pointer;
+		}
+		
+		#changeDescriptionButton:hover {
+			color:black;
+			cursor:pointer;
+			font-size:15px;
+			
+		}
+		
+		#imageOfProfilePicture:hover{
+			cursor:pointer;
+			opacity:0.5;
+		}
+		.navbar-header  {
+    			padding: 0;
+    			text-align: center;
+    			width: 100%;
+			}
+			
+		#bannedUserNotification{
+			position: fixed;
+			bottom:20em;
+			left:33em;
+			height:20em;
+			width:40em;
+			background-color: #fcfcfc;
+			color:black;
+			border-style: solid;
+			border-width:0.1px;
+			border-color: #efefef;
+			box-shadow: 5px 5px 30px 0.5px grey;
+			word-wrap: break-word;
+		}
+		
+		
+		#divForm{
+			padding-top:0.8em;
+		}
+		
+		
+		#searchInput{
+			width:80%;
+			display:inline;
+		}
+		
+		#searchButton{
+			display:inline;
+		}
+		
+		#korisnikBar{
+			padding-top:0.5em;
+		}
+		
+		
+		#glavniRed{
+			width: 100%;
+		}
+		
+		
+		#divRow{
+			margin: 5em 0 0 0;
+		}
+		
+		
+		#divURow{
+			text-align:center;
+		}
+		
+		
+		#eksperimentXD{
+		
+			display:none;
+		}
+		
+		#imageOfProfilePicture{
+			border-style:solid;
+			border-color: white; 
+			border-radius:50%;
+			
+		
+		}
+		#profilePicture{
+			display: none;
+		}
+		
+		
+		
+		
+	#numberOfFollowers {
+	
+		text-align: center;
+		margin: 3em 0 3em 0;
+	}
+	
+	
+	#rowDescriptionSection{
+		margin: 0 0 5em 0;
+	
+	}
+	
+	#bannedUserNotification{
+		background-color: transparent;
+		color: white;
+		position: absolute;
+		width: 400px;
+		left: 50%;
+		margin-left: -200px;
+		
+	}
+		
+		
+	#descriptionSection{
+	
+		text-align: center;
+	}	
+		
+		
+	#changeDescriptionButton{
+		float: right;
+		padding: 1em 1em 0 0;
+	}
+		
+	#description{
+	border-style:outset outset outset outset;
+		border-color:#292c2f;
+		border-width:0.5px;
+		padding:3em;
+		background-color: transparent;
+		
+		color: white;
+		
+	
+	}
+	
+	#description:hover{
+	
+		
+		color:white;
+		
+	}
+		
+		
+	#divRowVideos{
+	
+		margin-top: 2em;
+	}
+		
+		
+		#userNameInput{
+			opacity:0.7;
+	
+		}
+		
+		
+		#userPasswordInput2{
+			opacity: 0.7
+		}
+		
+		
+		
+	#videoContainer{
+		text-align: left;
+		border-style: none none none none;
+		/* border-width:thin;
+		border-color:#e3e2e2; */
+		padding-top:3em;
+	
+	}	
+		
+		
+	#rowContainerDivFollowing{
+	
+		margin:5em 0 5em 0;
+	}	
+		
+		
+		
+	#followingUsersHeadline{
+		text-align:center;
+	}
+		
+		
+	#followingUsersContainer{
+			padding-top:1em;
+			border-top-style:solid;
+			border-width:1px;
+			border-color :#e3e2e2;
+	}	
+		
+	#rowContainerFollowUnfollow{
+		margin-top: 2em;
+		text-align:center;
+	}
+		
+		
+		
+	#followUnfollowButton{
+	
+		width:60%;
+		align: center;
+		background-color: #292c2f;
+		color:white;
+		margin-bottom: 2em;
+		border-style: none;
+		border-color: grey;
+	}
+	
+	#followUnfollowButton:hover{
+		opacity:0.7;
+	}	
+	
+		
+		#userOptions{
+			margin: 2em 0 2em 0;
+		
+		}
+		
+		
+		
+	#userOptionsH{
+		text-align:center;
+	}
+		
+		
+	#rowInputsDiv{
+		border-style:solid none none none;
+		border-width:1px;
+		border-color:#e3e2e2;
+		padding:4em 0 2em 0;
+		margin:1em 0 1em 0;
+	}
+		
+		
+	#rowInputsDiv2{
+		margin-bottom:1em;
+	}
+		
+
+		
+		
+		
+	#divLastname{
+		margin-bottom:1em;
+	}
+	
+
+
+	#userLastnameInput{
+
+		opacity:0.7;
+	
+	}	
+	
+	#divPassword{
+		margin-bottom:1em;
+	}
+	
+	
+	#userPasswordInput{
+
+		opacity:0.7;
+	
+	}
+	
+
+	
+	
+	#divEmail{
+		margin-bottom: 1em;
+	}
+	
+	
+	#userEmailInput{
+		
+
+		opacity:0.7;
+	}
+	
+	
+	
+	
+	
+	#divPromote{
+		margin: 3em 0 4em 0;
+	}
+	
+	#divPromote2{
+		text-align: center;
+	}
+	
+	
+	
+	#banUnbanDiv{
+		margin-bottom: 2em;
+	}
+	
+	#userOptions{
+	
+	}
+
+	
+	#promoteDemoteButton{
+		background-color: transparent;
+		color: white;
+	
+	}
+	
+	#banUnbanButton{
+		background-color: transparent;
+		color: white;
+	}
+	
+	#uploadButton{
+		background-color: transparent;
+		color: white;
+		width: 100%;
+		height:4em;
+		text-align:center;
+	}
+	
+	
+				
+.footer-distributed{
+	background-color: transparent;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 60px 'Poiret one', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-3.2.1.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">	
+	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
+	<script src="singleUser.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/singleUser.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link rel="icon" href="images\nebIcon.png">
+	<title>Profile</title>
+
+
+	</head>
+<body>
+	<nav id="navnav" class="navbar navbar-default">
+			<div id="divNav" class="container-fluid">
+				<div class="col-md-1">
+					<a href="index.html"><img id="logoimg" src="images/nebulaWrite.png"/></a>
+				</div>
+				<div class="col-md-5">
+	
+				  
+				</div>
+				<div class="col-md-3"></div>
+				<div class="col-md-3">
+					<ul class="nav navbar-nav navbar-right" id="korisnikBar">
+				    </ul>
+				</div>
+			</div>
+	</nav>
+		<div class="container-fluid">
+			<div class="row" id="glavniRed">
+				<div class="row" id="divRow">
+					
+					
+						
+							<div class="col-md-4">
+								
+							</div>
+
+							<div class="col-md-4" id="divURow" style="text-align:center;">
+								<form id="pictureData" method="post" enctype="multipart/form-data" action="UploadPictureServlet">
+									<input id="eksperimentXD" name="userUsername">
+									<label for="profilePicture"><img id="imageOfProfilePicture"/></label>
+									<input id="profilePicture" type="file" name="profilePicture"></input>
+									
+								</form>
+								<!-- <img id="profilePicture" src="images/profileSilhuete.jpg" style="border-style:solid;border-width:2px;border-color:black;border-radius:50%;"> -->
+								<h2 id="fullName"></h2>
+								<h2 id="userUsername"></h2>
+								
+							<div class="row" id="rowContainerFollowUnfollow">
+							<div class="col-md-2"></div>
+							<div class="col-md-8"><button id="followUnfollowButton" class="btn btn-default btn-lg"></button></div>
+							<div class="col-md-2"></div>
+						</div>
+					
+							</div>
+
+							<div class="col-md-4">
+								<!--  <button style="margin-top:4.5em;" id="followButton" type="submit" class="btn btn-default btn-lg"></button> -->
+							</div>
+
+				</div>
+					<div class="row">
+					
+						<div class="col-md-4"></div>
+						<div class="col-md-4">
+							<p id="numberOfFollowers"></p>
+						</div>
+						<div class="col-md-4"></div>
+					</div>
+
+					<div class="row" id="rowDescriptionSection">
+						<div class="col-md-4">
+						</div>
+						<div id="descriptionSection" class="col-md-4">
+							<span id="changeDescriptionButton" class="glyphicon glyphicon-pencil"></span>
+							<p id="description"></p>
+						</div>
+						<div class="col-md-4">
+						</div>
+					</div>
+
+					<div class="row" id="divRowVideos">
+						<div class="row"></div>
+						<h2 style="text-align:center;">Videos</h2>
+						<div class="col-md-3"></div>
+						<div class="col-md-6" id="videoContainer">
+							
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+					
+					<div class="row"  id="rowContainerDivFollowing">
+						<div class="row">
+							<h3 id="followingUsersHeadline"></h3>
+						</div>
+						<div class="row" >
+							<div class="col-md-4"></div>
+							<div class="col-md-4" id="followingUsersContainer">
+								
+							</div>
+							<div class="col-md-4"></div>
+						</div>
+					</div>
+					
+					
+					</div>
+			
+					<div class="row" id="userOptions">
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+								<div class="row">
+									<h3  id="userOptionsH">User options</h3>
+								</div>
+								
+								<div class="row" id="rowInputsDiv">
+									<div class="row"  id="rowInputsDiv2">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<p>Name: </p>
+										</div>
+										<div class="col-md-4">
+											<input id="userNameInput" type="text" class="form-control input-sm changeUserInput">
+										</div>
+										<div class="col-md-1">
+											<span id="userNameInput" class="glyphicon glyphicon-ok userChange"></span>
+										</div>
+										<div class="col-md-1">
+											<span id="userNameInput" class="glyphicon glyphicon-remove cancelUserChange"></span>
+										</div>
+									</div>
+									
+									<div class="row" id="divLastname">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<p>Lastname: </p>
+										</div>
+										<div class="col-md-4">
+											<input  id="userLastnameInput" type="text" class="form-control input-sm changeUserInput">
+										</div>
+										<div class="col-md-1">
+											<span id="userLastnameInput" class="glyphicon glyphicon-ok userChange"></span>
+										</div>
+										<div class="col-md-1">
+											<span id="userLastnameInput" class="glyphicon glyphicon-remove cancelUserChange"></span>
+										</div>
+									</div>
+									
+									<!--  <div class="row" style="margin-bottom:1em;">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<p >Username: </p>
+										</div>
+										<div class="col-md-4">
+											<input id="userUsernameInput" type="text" class="form-control input-sm changeUserInput">
+										</div>
+										<div class="col-md-1">
+											<span id="userUsernameInput" class="glyphicon glyphicon-ok userChange"></span>
+										</div>
+										<div class="col-md-1">
+											<span id="userUsernameInput" class="glyphicon glyphicon-remove cancelUserChange"></span>
+										</div>
+									</div>
+									-->
+									
+									<div class="row" id="divPassword">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<p>Password: </p>
+										</div>
+										<div class="col-md-4">
+											<input  id="userPasswordInput" type="text" class="form-control input-sm changeUserInput">
+										</div>
+										<div class="col-md-1">
+											<span id="userPasswordInput" class="glyphicon glyphicon-ok userChange"></span>
+										</div>
+										<div class="col-md-1">
+											<span id="userPasswordInput" class="glyphicon glyphicon-remove cancelUserChange"></span>
+										</div>
+									</div>
+									
+									<div class="row" id="divEmail">
+										<div class="col-md-3"></div>
+										<div class="col-md-3">
+											<p  >Email: </p>
+										</div>
+										<div class="col-md-4">
+											<input id="userEmailInput" type="text" class="form-control input-sm changeUserInput">
+										</div>
+										<div class="col-md-1">
+											<span id="userEmailInput" class="glyphicon glyphicon-ok userChange" ></span>
+										</div>
+										<div class="col-md-1">
+											<span id="userEmailInput" class="glyphicon glyphicon-remove cancelUserChange"></span>
+										</div>
+									</div>
+									
+									<div class="row" id="divPromote">
+										<div class="col-md-3"></div>
+										<div class="col-md-6" id="divPromote2">
+											<button id="promoteDemoteButton" type="submit" class="btn btn-default"></button>
+										</div>
+										
+										<div class="col-md-3"></div>
+									</div>
+									
+									<div class="row" id="banUnbanDiv">
+										<div class="col-md-3"></div>
+										<div class="col-md-6" style="text-align:center;">
+											<button id="banUnbanButton" type="submit" class="btn btn-default btn-lg"></button>
+										</div>
+										
+										<div class="col-md-3"></div>
+									</div>
+								
+								
+								</div>
+							</div>
+							<div class="col-md-4">
+								
+							</div>
+						</div>
+						
+
+						
+					
+					</div>
+			</div>
+				
+				<div class="row" style="margin:3em 0 3em 0;"></div>
+				
+				<div id="messageDiv">
+					<h4 id="messageNotification"></h4>
+				</div>
+				<div id="bannedUserNotification">
+					<h3 style="text-align:center;margin-top:5em;">This user is banned</h3>
+					<p style="text-align:center;">redirecting to main page</p>
+				</div>
+				
+		</div>
+
+		
+		
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Nebula<span>Tube</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+				
+				</p>
+
+				
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Arse Teodorovica 1</span>Novi Sad, Srbija</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+38161 285 6602</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:djapic97@outlook.com">djapic97@outlook.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>O projektu</span>
+					Ovo je projekat iz web programiranja. 
+					Radjen je u java programskom jeziku.
+					Java script jeziku, html, css... 
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+
+</body>
+</html>

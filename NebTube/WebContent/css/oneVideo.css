@@ -1,0 +1,709 @@
+		html {
+			height: 100%;
+			
+		
+		}
+		
+		body{
+		font-family: 'Poiret One', cursive;
+		font-weight: 800;
+		letter-spacing: 3px;
+		background: url('../images/darkwebsite.jpg') center center;
+		color: white;
+		
+		}
+		#siteName {
+			margin: 0;
+		
+		}
+		
+			#navnav{
+			border: 0 !important;
+			opacity:0.8;
+		
+		}
+		.commentOptions{
+		background: transparent;
+		border-style: solid;
+		border-color: grey;
+		}
+		
+		.editCommentOption{
+		color:white;
+		}
+		.deleteCommentOption{
+			color:white;
+		}
+		
+	  #imgProfile{
+		  height:100%;
+		  width:100%;
+		  border-style:none;
+		  border-width:1px;
+		  border-color:white;
+		  border-radius:50%;
+		  
+	  }
+		
+		#korisnikBar{
+		}
+		.navbar-brand {
+			height: 40px;
+		}
+		.navbar-header  {
+			float:left;
+			text-align: center;
+			width: 100%;
+		}
+
+
+		#likeButton:hover {
+			cursor:pointer;
+		}
+		
+		#dislikeButton:hover {
+			cursor:pointer;
+		}
+		
+		.commentLikeButton:hover {
+			cursor:pointer;
+		}
+		
+		.commentDislikeButton:hover {
+			cursor:pointer;
+		}
+		
+		#changeDescriptionButton:hover {
+			cursor: pointer;
+		}
+		
+		#messageDiv{
+			position: fixed;
+			bottom:5em;
+			left:5em;
+			height:10em;
+			width:20em;
+			background-color: transparent;
+			color:white;
+			border-style: solid;
+			border-width:0.1px;
+			
+			word-wrap: break-word;
+
+		}
+		
+		#deleteConfirmation{
+			position: fixed;
+			bottom:20em;
+			left:39em;
+			height:15em;
+			width:30em;
+			background-color: transparent;
+			color: white;
+			border-style: solid;
+			border-width:0.1px;
+			border-color: #efefef;
+			box-shadow: 5px 5px 30px 0.5px grey;
+			word-wrap: break-word;
+			z-index:10;
+
+		}
+		
+		
+
+		
+		#select{
+		
+		
+		
+		}
+		#divSelector{
+		background-color: transparent;
+			color: white;
+			margin: 1em;
+		}
+		
+		
+				
+	ul {
+			    list-style-type: none;
+			    margin: 0;
+			    padding: 0;
+			    height:100%;
+				}
+			
+			li a {
+    			color: white;
+			}
+			
+			li a:hover {
+			    background-color: #555;
+			    color: red;
+			}
+			
+			
+			#navA{
+				font-family: 'Poiret One', cursive;
+				color: white;
+			}
+			
+			#navB{
+				font-family: 'Poiret One', cursive;
+				color: white;
+			}
+			
+			#navC{
+				color:white;
+				font-family: 'Poiret One', cursive;
+				text-align:center;
+			}
+			#navD{
+				font-family: 'Poiret One', cursive;
+				color:white;
+			}
+			
+			#divNav{
+				background-color: #292c2f;
+				border: 0 !important;
+			}
+			
+			
+			#divUsers{
+				border-right-style:none;
+				text-align:center;
+				background-color: transparent;
+				margin:1em;
+				padding:0;
+				color: white;
+			}
+			
+			h2.nav {
+				margin-top:0;
+				
+			}
+			
+			
+			#logoimg{
+			
+			    height: auto; 
+    			width: auto; 
+    			float: left;
+    			max-height: 70px;
+			}
+			
+		
+		
+		
+		
+		
+		
+		.footer-distributed{
+	background-color: transparent;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+
+
+
+
+
+
+#videoURLplaceholder{
+	
+	height:32em;
+}
+
+
+
+#divSor{
+	
+	margin-top:2em;
+}
+
+#divSor2{
+	
+	padding-left: 0;
+}
+
+#videoName{
+	margin-top:0;
+	padding-top:0;
+	padding-left:0;
+}
+
+#created{
+	
+	padding:0;
+	margin:0;
+	font-size:0.8em;
+}
+
+
+#views{
+	padding:0;
+	margin:0;
+	font-size:0.8em;
+}
+
+#divLikes{
+	padding: 0;
+	float:right;
+	text-align: right;
+	
+}
+
+
+#likeButton{
+	height: 2em;
+	color: green;
+	padding: 0;
+}
+
+
+#dislikeButton{
+	height: 2em;
+}
+
+#divUploader{
+	margin:4em 0 4em 0;
+}
+
+#h4tagUploader{
+	text-align:center;
+	border-style:none none solid none;
+	border-width:1px;
+	border-color:#f2f2f2;
+	padding:1em;
+}
+
+
+#uploaderImageContainer{
+	
+	text-align:center;
+}
+
+#uploaderImDiv2{
+	text-align:center;
+}
+
+#followUploaderButton{
+	background-color: transparent;
+	color: white;
+	margin-top:1em;
+}
+
+#followUploaderButton:hover{
+	background-color: #292c2f;
+	border-style: none;
+}
+
+
+
+#divVideoDesc{
+	margin: 3em 0 3em 0;
+}
+
+
+#hVDesc{
+	
+	text-align:center;
+	margin:1em 0 0.5em 0;
+	padding:0 0 1em 0;
+	border-style:none none none none;
+	
+	border-color:#e3e2e2;
+}
+
+#divDescChange{
+	margin-bottom: 2em;
+}
+
+
+
+#changeDescriptionButton{
+	
+}
+
+#descriptionSection{
+	text-align:center;
+}
+
+#divCommentSection{
+	margin:2em 0 2em 0;
+	
+}
+
+
+#h3Comment{
+	text-align:center;
+	margin-bottom:1em;
+}
+
+
+
+#divPost{
+	border-style: none none none none;
+	
+}
+
+
+
+
+#divPostUnder{
+	margin-top:2em;
+}
+
+
+
+#divPostUnder2{
+	display: inline;
+}
+
+
+
+#commentInput{
+	width:100%;
+	height: 100px;
+	background-color: transparent;
+}
+
+#commentSubmit{
+	width:100%;
+	background-color: transparent;
+	color: white;
+}
+
+
+#divSort{
+	margin-top:2em;
+
+}
+
+
+.btn-default{
+		background-color: transparent;
+	color: white;
+}
+
+#videoOptions{
+	margin: 5em 0 5em 0;
+	height: 5em;
+}
+
+
+
+#videoOptionsH{
+	text-align:center;
+	border-style: none none solid none;
+	border-color:#e3e2e2;
+	border-width: 0.1px;
+	padding:0 0 1em 0;
+	margin:0 0 1em 0;
+}
+
+#divVisibility{
+	text-align:center;
+}
+
+
+#divRating{
+	text-align:center;
+}
+
+#divCommentsR{
+		text-align:center;
+}
+
+
+#divOptions{
+	text-align:center;
+}
+
+
+#optionUnlisted{
+	font-style: italic;
+}
+
+#divSwitch{
+	text-align:center;
+}
+
+#divEnDis{
+	text-align:center;
+}
+
+#blockVideo{
+	
+	width:100%;
+	margin:2em 0 0 0;
+}
+
+
+#deleteVideoButton{
+	width:100%;
+	margin:2em 0 2em 0;
+	background-color: transparent;
+	border-color:white;
+	color: white;
+}
+
+
+
+
+#between{
+	margin:15em 0 0 15em;
+}
+
+
+
+
+#messageNotification{
+	background-color: transparent;
+	color: white;
+	text-align:center;
+	padding-top:2.5em;
+}
+
+
+#h3DeleteVideo{
+	text-align:center;
+}
+
+#okDeleteVideo{
+	width:100%;
+}
+
+#cancelDeleteVideo{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 60px 'Poiret one', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		

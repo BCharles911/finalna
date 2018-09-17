@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<!-- <script type="text/javascript" src="jquery-3.2.1.js"></script> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<script src="register.js"></script>
+<link rel="icon" href="images\nebIcon.png">
+<title>Register</title>
+
+</head>
+<body>
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="images\RegisterLetter.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form  name="registration">
+      <input type="text" id="name" class="fadeIn second" name = "name" placeholder="name">
+      <input type="text" id="lastname" class="fadeIn third" name = "lastname" placeholder="Last name">
+      <input type="text" id="username" class="fadeIn fourth" name="username" placeholder="login">
+      <input type="text" id="password" class="fadeIn fifth" name="password" placeholder="password">
+      <input type="text" id="email" class= "fadeIn sixst" name="email" placeholder="email">
+      <input  id="submitButton" type="button" class="fadeIn seventh" value="Register"/>
+    </form>
+    
+    
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="login.html">Back on login</a>
+    </div>
+	<div id="messageDiv">
+					<h4 id="messageNotification" style="text-align:center;padding-top:2.5em;"></h4>
+				</div>
+  </div>
+</div>
+</body>
+</html>
